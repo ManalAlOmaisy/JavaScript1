@@ -6,7 +6,7 @@ The (%) indicates the reminder of the calculation,
 After calculation the reminder of the below calculation is = 1,
 x=7
 x / 3 
-7 / 3 = 6 with reminder = (1)*/
+7 / 3 = 2 with reminder = (1)*/
 
 /* Answer2
 let y = 21;
