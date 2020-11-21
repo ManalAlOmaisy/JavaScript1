@@ -12,33 +12,28 @@ let grade;
 
 if(percentage >= 90){
    grade = "A";
-   console.log("You got a", grade,"(", percentage, "%)!");
-  
   }
  else if(percentage >= 80){
     grade = "B";
-    console.log("You got a", grade, "(", percentage, "%)!");
   }
   else if(percentage >= 70){
     grade = "C";
-    console.log("you got a", grade, "(", percentage, "%)!");
   }
   else if(percentage >= 60){
     grade = "D";
-    console.log("You got a", grade, "(", percentage, "%)!");
   }
   else if(percentage >= 50){
     grade = "E";
-    console.log("You got a", grade, "(", percentage, "%)!");
   }
   else
   {
     grade = "F";
-    console.log("You got a", grade, "(", percentage, "%)!");
   } 
- 
+  console.log("You got a", grade, "(", percentage, "%)!");
+return;
 }
-return(finalScore(99, 100));
+
+finalScore(70, 100);
 
 
 
