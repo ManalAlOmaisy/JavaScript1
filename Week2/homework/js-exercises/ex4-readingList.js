@@ -1,4 +1,4 @@
-let arrBooks = [
+let listOfBooks = [
     {title:"Pachinko",
      author: "Min jin Lee",
      alreadyRead: true
@@ -14,7 +14,7 @@ let arrBooks = [
   ]
 
 
-  arrBooks.forEach(function(read) {
+  listOfBooks.forEach(function(read) {
 
     console.log(read.title, "by", read.author);
   

@@ -29,8 +29,10 @@ if(percentage >= 90){
   {
     grade = "F";
   } 
-  console.log("You got a", grade, "(", percentage, "%)!");
-return;
+ 
+ console.log("You got a", grade, "(", percentage, "%)!");
+ return grade;
+
 }
 
 finalScore(70, 100);
