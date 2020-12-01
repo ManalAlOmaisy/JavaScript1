@@ -1,12 +1,12 @@
 
 // created a function to validate the length of the credit card
 function validateLength(cardNumber){
-  return (cardNumber.length === 16) ? true : false;
+  return cardNumber.length === 16;
 }
 
 // created a function to validate that all numbers
 function validateAllNumbers(cardNumber){
-    return (isNaN(cardNumber)) ? false : true;
+    return (!isNaN(cardNumber));
 }
 
 // created a function to validate different digits
@@ -14,12 +14,12 @@ function validateDifferentDigits(cardNumber){
     const changeToArray = cardNumber.split('');
     const setOfCardNumber = new Set(changeToArray); 
 
-    return (setOfCardNumber.size) > 1  ? true : false;
+    return (setOfCardNumber.size) > 1 ;
 }
 
 // created a function to validate last even Number
 function validateLastEvenNumber(cardNumber){
-    return cardNumber % 2 === 0 ? true : false;
+    return cardNumber % 2 === 0;
     }
 
 //   created a function to validate sum of all numbers must be over 16
@@ -29,7 +29,7 @@ function validateLastEvenNumber(cardNumber){
         acc = acc + parseInt(elem,10);
         return acc;
     }, 0);
-    return Total > 16 ? true :false;
+    return Total > 16;
 }
 
 //the credit card validation function
@@ -59,6 +59,7 @@ function validateLastEvenNumber(cardNumber){
       validateCreditNumber('4444444444444444');
       validateCreditNumber('1234567654323455');
       validateCreditNumber('1111111100111010');
+      validateCreditNumber('123457654323454');
 
   
   
